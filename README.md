@@ -23,6 +23,7 @@ This project uses [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.
    EMAIL_USERNAME=<your email address>
    EMAIL_PASSWORD=<your email password>
    IMAP_SERVER=<your email provider's IMAP server address>
+   IMAP_PORT=<Optional: your email provider's IMAP port>
    ```
 4. Run the project using `npm start`
 
