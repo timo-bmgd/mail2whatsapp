@@ -4,7 +4,7 @@
   "description": "a simple bot, which sends received mails to a whatsapp group.",
   "main": "src/app.js",
   "scripts": {
-    "start:dev": "nodemon src/app.js" 
+    "start:dev": "nodemon -r dotenv/config src/app.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/ultratynoz/mail2whatsapp#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "html-to-text": "^9.0.5",
+    "imap": "^0.8.19",
+    "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.19.5"
   },
   "devDependencies": {
