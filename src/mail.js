@@ -23,6 +23,7 @@ function fetchEmails(emailCount) {
       let requestedNumber = Math.min(box.messages.total - 1,(emailCount - 1));
       var f = imap.seq.fetch(
         box.messages.total -  requestedNumber + ":" + box.messages.total,
+
         { bodies: ["HEADER.FIELDS (FROM)", "1"], struct: true });
         
       f.on("message", function (msg, seqno) {
