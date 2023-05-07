@@ -30,6 +30,7 @@ client.on("message_create", async (msg) => {
                 client.sendMessage(msg.from, mail);
             });
         }
+
     }
 });
 
